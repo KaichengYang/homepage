@@ -1,7 +1,7 @@
 <template>
     <div>
         <template v-for="paper_chunk in paper_chunks">
-            <h4 v-if="!is_home">{{ paper_chunk.meta }} </h4>
+            <h4 v-if="!is_home">{{ get_paper_meta_for_presentation(paper_chunk.meta) }}</h4>
             <PublistUnit v-bind:papers="paper_chunk.papers"/>
         </template>
         <BackForth v-bind:is_home="is_home" v-bind:target="'/pub'"/>
@@ -31,7 +31,15 @@ export default {
     },
     data () {
         return {
-            refs: json
+            refs: json,
+            paper_meta_mapping: {
+                netsci: "Network Science",
+                opioid: "Opioid Epidemic in U.S.",
+                socialmedia: "Bad Actors and Misinformation on Social Media",
+                conf: "Conference Proceedings",
+                journal: "Journal Articles",
+                preprint: "Preprint"
+            }
         }
     },
     computed: {
@@ -118,6 +126,13 @@ export default {
                 })
             }
             return paper_chunks;
+        },
+        get_paper_meta_for_presentation: function (meta) {
+            if(meta in this.paper_meta_mapping){
+                return this.paper_meta_mapping[meta];
+            }else{
+                return meta;
+            }
         }
     }
 }

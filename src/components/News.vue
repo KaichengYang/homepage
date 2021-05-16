@@ -1,6 +1,6 @@
 <template>
     <!-- news -->
-    <div>
+    <div id="newslist">
         <ul class="mt-3">
             <li v-for="news in news_to_show">
                 <span class="badge bg-secondary" style="display:inline-block; width:100px">{{ news.date }}</span> <span v-html="news.msg"></span>
