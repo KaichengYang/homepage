@@ -13,6 +13,20 @@
       See the full publication list <a href="/pub">here</a> or from my <a href="https://scholar.google.com/citations?user=tqb96X8AAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-1x"></i> Google Scholar</a> page.
       </p>
       <Publist v-bind:view="'highlight'"/>
+
+      <hr>
+
+      <div id="about" class="my-5">
+        <h2 class="mt-3">About</h2>
+        Site created by Kai-Cheng Yang. Powered by
+        <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>,
+        <a href="https://vuejs.org/" target="_blank">Vue.js</a>,
+        <a href="https://bootstrap-vue.org/">BootstrapVue</a>,
+        <a href="https://madewithvuejs.com/vue-scrollto" target="_blank">Vue ScrollTo</a>,
+        <a href="http://ianlunn.github.io/Hover/" target="_blank">Hoever.css</a>,
+        <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>,
+        and <a href="https://jpswalsh.github.io/academicons/" target="_blank">Academicons</a>.
+      </div>
     </div>
   </div>
 </template>
