@@ -1,9 +1,9 @@
 <template>
     <div>
         <NavbarOther />
-
         <div class="pt-5">
             <div class="container mt-5">
+                <h2>News</h2>
                 <News v-bind:is_home='false'/>
             </div>
         </div>

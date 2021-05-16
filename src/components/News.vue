@@ -1,7 +1,6 @@
 <template>
     <!-- news -->
-    <div id="news" class="my-5">
-        <h2 class="mt-3">News</h2>
+    <div>
         <ul class="mt-3">
             <li v-for="news in news_to_show">
                 {{ news.date }}: <span v-html="news.msg"></span>

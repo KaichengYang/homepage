@@ -5,9 +5,14 @@
     <div class="container mt-5">
       <Bio />
       <hr>
+      <h2>News</h2>
       <News />
       <hr>
-      <Publist />
+      <h2 class="mt-3">Selected publications</h2>
+      <p class="my-3">
+      See the full publication list <a href="/pub">here</a> or from my <a href="https://scholar.google.com/citations?user=tqb96X8AAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-1x"></i> Google Scholar</a> page.
+      </p>
+      <Publist v-bind:view="'highlight'"/>
     </div>
   </div>
 </template>

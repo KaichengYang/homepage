@@ -76,10 +76,6 @@ a:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:
     color: #ac4142;
 }
 
-.highlight {
-    background-color: burlywood;
-}
-
 .btn-clicked {
     background-color: #ac4142;
     border-color: #ac4142;
