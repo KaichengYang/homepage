@@ -1,5 +1,4 @@
 <template>
-    <!-- news -->
     <div id="newslist">
         <ul class="mt-3" style="padding-left: 0">
             <li v-for="news in news_to_show">
