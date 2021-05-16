@@ -83,7 +83,7 @@ a:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:
   }
 
 #newslist > ul > li {
-    list-style-type: circle;
+    list-style-type: none;
   }
 
 li {

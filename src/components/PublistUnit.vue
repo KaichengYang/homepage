@@ -4,7 +4,7 @@
             <span v-for="paper in papers">
                 <li>
                     <span v-html="paper.authors"></span>
-                    ({{ paper.year }}).
+                    ({{ paper.year[0] }}).
                     <b>{{ paper.title }}</b>
                     <span v-if="paper.venue">
                         <i>{{ paper.venue }}</i>

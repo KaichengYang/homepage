@@ -1,7 +1,7 @@
 <template>
     <div>
         <template v-for="paper_chunk in paper_chunks">
-            <h4 v-if="!is_home">{{ get_paper_meta_for_presentation(paper_chunk.meta) }}</h4>
+            <h4 v-if="!is_home">{{ paper_chunk.meta }}</h4>
             <PublistUnit v-bind:papers="paper_chunk.papers"/>
         </template>
         <BackForth v-bind:is_home="is_home" v-bind:target="'/pub'"/>
@@ -39,90 +39,45 @@ export default {
                 conf: "Conference Proceedings",
                 journal: "Journal Articles",
                 preprint: "Preprint"
+            },
+            default_paper_meta_order: {
+                topic: ["socialmedia", "opioid", "netsci"],
+                type: ["preprint", "journal", "conf"]
             }
         }
     },
     computed: {
         paper_chunks: function () {
-            if(this.view === "topic"){
-                return this.get_paper_chunks_topic()
-            } else if (this.view == "type"){
-                return this.get_paper_chunks_type()
-            } else if (this.view == "highlight"){
-                return this.get_paper_chunks_highlight()
-            } else {
-                return this.get_paper_chunks_year()
+            if(["topic", "type", "highlight"].indexOf(this.view) >= 0){
+                return this.get_paper_chunks(this.view);
+            }else{
+                return this.get_paper_chunks("year");
             }
         }
     },
     methods: {
-        get_paper_chunks_year: function () {
-            var year_set = new Set();
-            this.refs.forEach(paper => {
-                year_set.add(paper.year)
-            });
-            var year_list = Array.from(year_set).sort((a, b) => b - a);
-            var paper_chunks = Array();
-            for(var i=0; i<year_list.length; i++){
-                var year = year_list[i];
-                paper_chunks.push({
-                    meta: year,
-                    papers: this.refs.filter(paper => paper.year === year)
-                })
-            }
-            // console.log(year_list);
-            return paper_chunks;
-        },
-        get_paper_chunks_type: function () {
-            var type_set = new Set();
-            this.refs.forEach(paper => {
-                type_set.add(paper.type)
-            });
-            var type_list = Array.from(type_set).sort();
-            var paper_chunks = Array();
-            for(var i=0; i<type_list.length; i++){
-                var type = type_list[i];
-                paper_chunks.push({
-                    meta: type,
-                    papers: this.refs.filter(paper => paper.type == type)
-                })
-            }
-            return paper_chunks;
-        },
-        get_paper_chunks_topic: function () {
-            var topic_set = new Set();
-            for(var i=0; i<this.refs.length; i++){
-                var paper_topics = this.refs[i].topic;
-                for(var j=0; j<paper_topics.length; j++){
-                    topic_set.add(paper_topics[j]);
+        get_paper_chunks: function (classifier_name) {
+            if(classifier_name in this.default_paper_meta_order){
+                var classifier_list = this.default_paper_meta_order[classifier_name]
+            }else{
+                var classifier_set = new Set();
+                for(var i=0; i<this.refs.length; i++){
+                    var paper_classifiers = this.refs[i][classifier_name];
+                    for(var j=0; j<paper_classifiers.length; j++){
+                        classifier_set.add(paper_classifiers[j]);
+                    }
                 }
+                var classifier_list = Array.from(classifier_set).sort((a, b) => b-a);
             }
-            var topic_list = Array.from(topic_set).sort();
+
             var paper_chunks = Array();
-            for(var i=0; i<topic_list.length; i++){
-                var topic = topic_list[i];
+            for(var i=0; i<classifier_list.length; i++){
+                var paper_classifier = classifier_list[i];
+                var temp_paper_list = this.refs.filter(paper => paper[classifier_name].indexOf(paper_classifier) >= 0);
+                temp_paper_list.sort((a, b) => b.year[0] - a.year[0]);
                 paper_chunks.push({
-                    meta: topic,
-                    papers: this.refs.filter(paper => paper.topic.indexOf(topic) >= 0)
-                })
-            }
-            return paper_chunks;
-        },
-        get_paper_chunks_highlight: function () {
-            var highlight_set = new Set();
-            for(var i=0; i<this.refs.length; i++){
-                var paper_highlight = this.refs[i].highlight;
-                for(var j=0; j<paper_highlight.length; j++){
-                    highlight_set.add(paper_highlight[j]);
-                }
-            }
-            var highlight_list = Array.from(highlight_set).sort();
-            var paper_chunks = Array();
-            for(var i=0; i<highlight_list.length; i++){
-                var highlight = highlight_list[i];
-                paper_chunks.push({
-                    meta: highlight,
-                    papers: this.refs.filter(paper => paper.highlight.indexOf(highlight) >= 0)
+                    meta: this.get_paper_meta_for_presentation(paper_classifier),
+                    papers: temp_paper_list
                 })
             }
             return paper_chunks;
