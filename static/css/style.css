@@ -82,6 +82,10 @@ a:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:
     color: white;
   }
 
+ul > li {
+    list-style-type: circle;
+  }
+
 li {
     margin-bottom: 10px;
 }
