@@ -13,6 +13,7 @@ import '../../static/css/style.css'
 import Home from '@/components/Home'
 import PublistPage from '@/components/PublistPage'
 import NewsPage from '@/components/NewsPage'
+import ToolPage from '@/components/ToolPage'
 
 Vue.use(Router)
 Vue.use(BootstrapVue)
@@ -34,6 +35,11 @@ export default new Router({
       path: '/pub',
       name: 'PublistPage',
       component: PublistPage
+    },
+    {
+      path: '/tools',
+      name: 'ToolPage',
+      component: ToolPage
     }
   ]
 })

@@ -6,46 +6,25 @@
         "links": [
             {
                 "url": "https://botometer.osome.iu.edu/",
-                "name": "Botometer"
+                "name": "Web interface"
             },
             {
                 "url": "https://rapidapi.com/OSoMe/api/botometer-pro",
                 "name": "API"
-            }
-        ]
-    },
-    {
-        "title": "BotometerLite",
-        "image": "botometerlite",
-        "msg": "Bot detection at scale",
-        "links": [
+            },
             {
                 "url": "https://botometer.osome.iu.edu/botometerlite",
                 "name": "BotometerLite"
             },
             {
-                "url": "https://rapidapi.com/OSoMe/api/botometer-pro",
-                "name": "API"
-            }
-        ]
-    },
-    {
-        "title": "botometer-python",
-        "image": "botometerpython",
-        "msg": "Python package to access Botometer(Lite) API",
-        "links": [
-            {
-                "url": "https://github.com/IUNetSci/botometer-python",
-                "name": "GitHub"
-            },
-            {
                 "url": "https://pypi.org/project/botometer/",
-                "name": "PyPI"
+                "name": "Python library"
             }
         ]
     },
     {
         "title": "Hoaxy",
+        "image": "hoaxy",
         "msg": "Visualize the spread of claims and fact checking",
         "links": [
             {
@@ -56,6 +35,7 @@
     },
     {
         "title": "OSoMeTweet",
+        "image": "osometweet",
         "msg": "Python package to access Twitter's V2 API",
         "links": [
             {
@@ -70,6 +50,7 @@
     },
     {
         "title": "BotSlayer",
+        "image": "botslayer",
         "msg": "Detect coordination and bot amplification",
         "links": [
             {
@@ -84,6 +65,7 @@
     },
     {
         "title": "CoVaxxy",
+        "image": "covaxxy",
         "msg": "Dashboard for COVID-19 vaccine Twitter discussion",
         "links": [
             {
@@ -98,6 +80,7 @@
     },
     {
         "title": "BiRank",
+        "image": "birank",
         "msg": "Bipartite network PageRank",
         "links": [
             {

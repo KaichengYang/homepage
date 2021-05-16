@@ -1,7 +1,7 @@
 <template>
-    <div id="tool" class="my-5">
+    <div>
         <div class="row">
-            <template v-for="tool in tools_list">
+            <template v-for="tool in tools_to_show">
                 <div class="col-md-4 mb-3">
                     <b-card
                     :title="tool.title"
@@ -26,22 +26,42 @@
                     </b-card>
                 </div>
             </template>
-
         </div>
+
+        <BackForth v-bind:is_home="is_home" v-bind:target="'/tools'"/>
     </div>
 </template>
 
 <script>
 import json from '../../static/files/tools.json'
 import libs from './libs'
+import BackForth from './BackForth'
 
 export default {
     name: "Tool",
+    components: {
+        BackForth
+    },
+    props: {
+        is_home: {
+            type: Boolean,
+            default: true
+        }
+    },
     mixins: [libs],
     data () {
         return {
             tools_list: json,
             libs: libs
+        }
+    },
+    computed: {
+        tools_to_show () {
+            if(this.is_home){
+                return this.tools_list.slice(0, 3);
+            }else{
+                return this.tools_list;
+            }
         }
     }
 }
