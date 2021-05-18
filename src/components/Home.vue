@@ -8,17 +8,17 @@
       <hr>
 
       <!-- News -->
-      <h2 id="news">News</h2>
+      <h2 id="news" class="mt-3">News</h2>
       <News />
       <hr>
 
       <!-- Project -->
-      <h2 id="project">Research project highlights</h2>
+      <h2 id="project" class="mt-3">Research project highlights</h2>
       <Project />
       <hr>
 
       <!-- Tools -->
-      <h2 id="tool">Tools</h2>
+      <h2 id="tool" class="mt-3">Tools</h2>
       <Tool />
       <hr>
 
@@ -31,7 +31,7 @@
       <hr>
 
       <!-- About -->
-      <div id="about" class="my-5">
+      <div id="about" class="mt-3 mb-5">
         <h2 class="mt-3">About</h2>
         Site created by Kai-Cheng Yang. Powered by
         <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>,

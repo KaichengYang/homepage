@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mt-3">
         <div class="row">
             <template v-for="tool in tools_to_show">
                 <div class="col-md-4 mb-3">

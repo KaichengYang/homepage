@@ -1,7 +1,7 @@
 <template>
     <div>
         <span v-for="project_highlight in projects">
-            <h3 class="mt-3 mb-3">{{ project_highlight.project_class }}</h3>
+            <h3 class="mt-3">{{ project_highlight.project_class }}</h3>
 
             <div class="row">
                 <template v-for="project in project_highlight.projects">
