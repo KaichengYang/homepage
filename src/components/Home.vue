@@ -8,22 +8,22 @@
       <hr>
 
       <!-- News -->
-      <h2>News</h2>
+      <h2 id="news">News</h2>
       <News />
       <hr>
 
       <!-- Project -->
-      <h2>Research project highlights</h2>
+      <h2 id="project">Research project highlights</h2>
       <Project />
       <hr>
 
       <!-- Tools -->
-      <h2>Tools</h2>
+      <h2 id="tool">Tools</h2>
       <Tool />
       <hr>
 
       <!-- Publication -->
-      <h2 class="mt-3">Selected publications</h2>
+      <h2 class="mt-3" id="publication">Selected publications</h2>
       <p class="my-3">
       See the full publication list <a href="/pub">here</a> or from my <a href="https://scholar.google.com/citations?user=tqb96X8AAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-1x"></i> Google Scholar</a> page.
       </p>

@@ -37,17 +37,17 @@
                 I'm a fourth year Ph.D candidate in Informatics at <a href="https://luddy.indiana.edu/" target="_blank">
                     Luddy School of Informatics, Computing, and Engineering</a>
                     in Indiana University Bloomington.
-            </p>
-
-            <p>
-                I'm interested in computational social science and network science.
                 I mainly work with <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>,
                     <a href="http://cnets.indiana.edu/people/yong-yeol-ahn/" target="_blank">Yong-Yeol Ahn</a>, and
                     <a href="https://www.indiana.edu/~soc/bios/Brea_Perry.html" target="_blank">Brea L. Perry</a>.
             </p>
 
             <p>
-                Check out my research projects and tools below!
+                I'm interested in computational social science and network science.
+                You can checkout my<a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more. I also build <a href="#" v-scroll-to="'#tool'">tools</a> that you may find useful.
+            </p>
+
+            <p>
             </p>
         </div>
     </div>

@@ -40,6 +40,11 @@ export default new Router({
       path: '/tools',
       name: 'ToolPage',
       component: ToolPage
+    },
+    {
+      path: '*',
+      name: '404',
+      component: Home
     }
   ]
 })
