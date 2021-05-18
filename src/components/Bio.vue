@@ -1,6 +1,6 @@
 <template>
     <!-- bio -->
-    <div class="row pt-5">
+    <div class="row mt-5">
         <div class="col-12 col-lg-4 mb-3">
             <div class="mx-auto">
                 <img class="avatar mx-auto" src="static/images/avatar.png">

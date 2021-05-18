@@ -19,7 +19,6 @@ Vue.use(Router)
 Vue.use(BootstrapVue)
 
 export default new Router({
-  mode: 'history',
   routes: [
     {
       path: '/',
@@ -46,5 +45,13 @@ export default new Router({
       name: '404',
       component: Home
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    if(savedPosition){
+      return savedPosition;
+    }else{
+      document.getElementById('app').scrollIntoView();
+      return null;
+    }
+  }
 })

@@ -1,10 +1,10 @@
 <template>
     <div>
         <template v-if="is_home">
-            <a v-bind:href="target">More ...</a>
+            <router-link v-bind:to="target">More ...</router-link>
         </template>
         <template v-else>
-            <a href="/"><i class="far fa-arrow-alt-circle-left"></i> Back</a>
+            <router-link to="/"><i class="far fa-arrow-alt-circle-left"></i> Back</router-link>
         </template>
     </div>
 </template>
