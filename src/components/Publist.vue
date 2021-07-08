@@ -1,8 +1,16 @@
 <template>
     <div>
+        <div class="btn-toolbar my-3" role="toolbar" aria-label="Toolbar with button groups" v-if="!is_home">
+            <div class="btn-group flex-wrap mr-2" role="group" aria-label="First group" data-toggle="buttons">
+                <button type="button" class="btn btn-secondary" disabled>Go to:</button>
+                <template v-for="classifer in default_paper_meta_order[view]">
+                    <button type="button" class="btn btn-outline-secondary" v-scroll-to="'#id_' + classifer">{{ get_paper_meta_for_presentation(classifer) }}</button>
+                </template>
+            </div>
+        </div>
         <template v-for="paper_chunk in paper_chunks">
-            <h4 v-if="!is_home">{{ paper_chunk.meta }}</h4>
-            <PublistUnit v-bind:papers="paper_chunk.papers"/>
+            <h4 v-bind:id="'id_' + paper_chunk.key" v-bind:key="'header' + paper_chunk.key" v-if="!is_home">{{ paper_chunk.meta }}</h4>
+            <PublistUnit v-bind:papers="paper_chunk.papers" v-bind:key="paper_chunk.key" />
         </template>
         <BackForth v-bind:is_home="is_home" v-bind:target="'/pub'"/>
     </div>
@@ -42,7 +50,8 @@ export default {
             },
             default_paper_meta_order: {
                 topic: ["socialmedia", "opioid", "netsci"],
-                type: ["preprint", "journal", "conf"]
+                type: ["preprint", "journal", "conf"],
+                year: [2021, 2020, 2019, 2018, 2017]
             }
         }
     },
@@ -57,25 +66,26 @@ export default {
     },
     methods: {
         get_paper_chunks: function (classifier_name) {
+            let classifier_list = null;
             if(classifier_name in this.default_paper_meta_order){
-                var classifier_list = this.default_paper_meta_order[classifier_name]
+                classifier_list = this.default_paper_meta_order[classifier_name]
             }else{
                 var classifier_set = new Set();
-                for(var i=0; i<this.refs.length; i++){
-                    var paper_classifiers = this.refs[i][classifier_name];
-                    for(var j=0; j<paper_classifiers.length; j++){
-                        classifier_set.add(paper_classifiers[j]);
+                for(let ref of this.refs){
+                    var paper_classifiers = ref[classifier_name];
+                    for(let paper_classifier of paper_classifiers){
+                        classifier_set.add(paper_classifier);
                     }
                 }
-                var classifier_list = Array.from(classifier_set).sort((a, b) => b-a);
+                classifier_list = Array.from(classifier_set).sort((a, b) => b-a);
             }
 
-            var paper_chunks = Array();
-            for(var i=0; i<classifier_list.length; i++){
-                var paper_classifier = classifier_list[i];
-                var temp_paper_list = this.refs.filter(paper => paper[classifier_name].indexOf(paper_classifier) >= 0);
+            let paper_chunks = Array();
+            for(let paper_classifier of classifier_list){
+                let temp_paper_list = this.refs.filter(paper => paper[classifier_name].indexOf(paper_classifier) >= 0);
                 temp_paper_list.sort((a, b) => b.year[0] - a.year[0]);
                 paper_chunks.push({
+                    key: paper_classifier,
                     meta: this.get_paper_meta_for_presentation(paper_classifier),
                     papers: temp_paper_list
                 })
