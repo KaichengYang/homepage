@@ -34,7 +34,7 @@
       <div id="about" class="mt-3 mb-5">
         <h2 class="mt-3">About</h2>
         I created this site myself.
-        It's curretnly implemented as a <a href="https://vuejs.org/" target="_blank">Vue.js</a> app with the help from
+        It's currently implemented as a <a href="https://vuejs.org/" target="_blank">Vue.js</a> app with the help from
         <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>,
         <a href="https://bootstrap-vue.org/">BootstrapVue</a>,
         <a href="https://madewithvuejs.com/vue-scrollto" target="_blank">Vue ScrollTo</a>,
