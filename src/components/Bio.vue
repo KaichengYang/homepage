@@ -15,10 +15,10 @@
                     <a href="static/files/cv.pdf" class="contact_icon">
                         <i class="ai ai-cv-square ai-1x"></i>
                     </a>
-                    <a href="https://scholar.google.com/citations?user=tqb96X8AAAAJ&hl=en" class="contact_icon" target="_blank">
+                    <a href="https://scholar.google.com/citations?hl=en&user=tqb96X8AAAAJ&view_op=list_works&sortby=pubdate" class="contact_icon" target="_blank">
                         <i class="ai ai-google-scholar-square ai-1x"></i>
                     </a>
-                    <a href="https://www.researchgate.net/profile/Kai_Cheng_Yang2n" class="contact_icon" target="_blank">
+                    <a href="https://www.researchgate.net/profile/Kai-Cheng-Yang-3" class="contact_icon" target="_blank">
                         <i class="ai ai-researchgate-square ai-1x"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/kaicheng-yang-43477213b/" class="contact_icon" target="_blank">
