@@ -25,7 +25,7 @@
       <!-- Publication -->
       <h2 class="mt-3" id="publication">Selected publications</h2>
       <p class="my-3">
-      See the full publication list <router-link to="/pub">here</router-link> or from my <a href="https://scholar.google.com/citations?hl=en&user=tqb96X8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i> Google Scholar</a> page.
+      See the full publication list <router-link to="/pub"><i class="fas fa-list"></i> here</router-link> or from my <a href="https://scholar.google.com/citations?hl=en&user=tqb96X8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i> Google Scholar</a> page.
       </p>
       <Publist v-bind:view="'highlight'"/>
       <hr>
