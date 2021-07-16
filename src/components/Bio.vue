@@ -44,7 +44,7 @@
 
             <p>
                 I'm interested in computational social science and network science.
-                You can check out my<a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more. I also build <a href="#" v-scroll-to="'#tool'">tools</a> that you may find useful.
+                You can check out my <a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more. I also build <a href="#" v-scroll-to="'#tool'">tools</a> that you may find useful.
             </p>
 
             <p>
