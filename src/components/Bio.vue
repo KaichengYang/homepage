@@ -34,7 +34,7 @@
             <h2>Bio</h2>
             <p>
                 Hi! I'm Kai-Cheng Yang (杨凯程), the pronunciation is KY-cheng YAHNG. You can also call me Kevin.
-                I'm a fourth year Ph.D candidate in Informatics at <a href="https://luddy.indiana.edu/" target="_blank">
+                I'm a fifth year Ph.D candidate in Informatics at <a href="https://luddy.indiana.edu/" target="_blank">
                     Luddy School of Informatics, Computing, and Engineering</a>
                     in Indiana University Bloomington.
                 I mainly work with <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>,
