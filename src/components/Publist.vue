@@ -41,6 +41,7 @@ export default {
         return {
             refs: json,
             paper_meta_mapping: {
+                covid: "COVID-19 pandemic",
                 netsci: "Network Science",
                 opioid: "Opioid Epidemic in U.S.",
                 socialmedia: "Bad Actors and Misinformation on Social Media",
@@ -49,7 +50,7 @@ export default {
                 preprint: "Preprint"
             },
             default_paper_meta_order: {
-                topic: ["socialmedia", "opioid", "netsci"],
+                topic: ["socialmedia", "covid", "opioid", "netsci"],
                 type: ["preprint", "journal", "conf"],
                 year: [2022, 2021, 2020, 2019, 2018, 2017]
             }
