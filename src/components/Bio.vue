@@ -34,7 +34,7 @@
             <h2>Bio</h2>
             <p>
                 Hi! I'm Kai-Cheng Yang (杨凯程), the pronunciation is KY-cheng YAHNG. You can also call me Kevin.
-                I'm a fifth year Ph.D candidate in Informatics at <a href="https://luddy.indiana.edu/" target="_blank">
+                I'm a fifth year Ph.D. candidate in Informatics at <a href="https://luddy.indiana.edu/" target="_blank">
                     Luddy School of Informatics, Computing, and Engineering</a>
                     in Indiana University Bloomington.
                 I mainly work with <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>,
@@ -44,7 +44,9 @@
 
             <p>
                 I'm interested in computational social science and network science.
-                You can check out my <a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more. I also build <a href="#" v-scroll-to="'#tool'">tools</a> that you may find useful.
+                Particularly, I analyze social media and medical claim data to identify inauthentic actors and adverse behaviors and study their implications for the online information ecosystem and public health.
+                You can check out my <a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more.
+                I also develop <a href="#" v-scroll-to="'#tool'">tools</a> that you may find useful.
             </p>
 
             <p>
