@@ -41,7 +41,7 @@ export default {
         return {
             refs: json,
             paper_meta_mapping: {
-                covid: "COVID-19 pandemic",
+                covid: "COVID-19 Pandemic",
                 netsci: "Network Science",
                 opioid: "Opioid Epidemic in U.S.",
                 socialmedia: "Bad Actors and Misinformation on Social Media",
