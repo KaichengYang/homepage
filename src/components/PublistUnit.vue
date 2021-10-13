@@ -3,9 +3,11 @@
         <ol class="mt-3">
             <span v-for="paper in papers">
                 <li>
-                    <span v-html="paper.authors"></span>
-                    ({{ paper.year[0] }}).
                     <b>{{ paper.title }}</b>
+                    ({{ paper.year[0] }}).
+                    <br>
+                    <span v-html="paper.authors"></span>
+                    <br>
                     <span v-if="paper.venue">
                         <i>{{ paper.venue }}</i>
                     </span>
