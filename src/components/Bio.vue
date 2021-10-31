@@ -44,7 +44,7 @@
 
             <p>
                 I'm interested in computational social science and network science.
-                Particularly, I analyze social media and medical claim data to identify inauthentic actors and adverse behaviors and study their implications for the online information ecosystem and public health.
+                Particularly, I analyze social media and medical claims data to identify inauthentic actors and adverse behaviors and study their implications for online information ecosystem and public health.
                 You can check out my <a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more.
                 I also develop <a href="#" v-scroll-to="'#tool'">tools</a> that you may find useful.
             </p>
