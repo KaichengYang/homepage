@@ -43,6 +43,11 @@
             </p>
 
             <p>
+                I'm <b>on the job market</b>, seeking academic positions in information science, data science, computer science, and complex systems departments starting in fall 2022.
+                Please contact me with relevant opportunities!
+            </p>
+
+            <p>
                 I'm interested in computational social science and network science.
                 Particularly, I analyze social media and medical claims data to identify inauthentic actors and adverse behaviors and study their implications for online information ecosystem and public health.
                 You can check out my <a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more.
