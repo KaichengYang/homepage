@@ -16,7 +16,7 @@
                     </span>
                     <br>
                     <span v-if="paper.medias">
-                        <i>Media Coverage:</i>
+                        <i>Media Coverage: </i>
                         <span v-for="(media, index) in paper.medias">
                             <a v-bind:href="media.url" target="_blank"><i class="fas fa-external-link-alt"></i> {{ media.name }}</a>
                             <span v-if="index != paper.medias.length - 1">| </span>
