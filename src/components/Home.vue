@@ -10,6 +10,9 @@
       <!-- News -->
       <h2 id="news" class="mt-3">News</h2>
       <News />
+      <p class="mt-3">
+        You can also check out my <router-link to="/failures">failures ...</router-link>
+      </p>
       <hr>
 
       <!-- Project -->

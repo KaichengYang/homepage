@@ -14,6 +14,7 @@ import Home from '@/components/Home'
 import PublistPage from '@/components/PublistPage'
 import NewsPage from '@/components/NewsPage'
 import ToolPage from '@/components/ToolPage'
+import Failures from '@/components/Failures'
 
 Vue.use(Router)
 Vue.use(BootstrapVue)
@@ -39,6 +40,11 @@ export default new Router({
       path: '/tools',
       name: 'ToolPage',
       component: ToolPage
+    },
+    {
+      path: '/failures',
+      name: 'FailuresPage',
+      component: Failures
     },
     {
       path: '*',

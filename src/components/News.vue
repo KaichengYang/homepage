@@ -1,13 +1,12 @@
 <template>
     <div id="newslist">
         <ul class="mt-3" style="padding-left: 0">
-            <li v-for="news in news_to_show">
+            <li v-for="news in news_to_show" :key="news.msg">
                 <span class="badge" :style="box_style(color_text_map['date']['color'])">{{ news.date }}</span>
                 <span v-if="news.type" class="badge" :style="box_style(color_text_map[news.type]['color'])">{{ color_text_map[news.type]['text'] }}</span>
                 <span v-html="news.msg"></span>
             </li>
         </ul>
-
         <BackForth v-bind:is_home="is_home" v-bind:target="'/news'"/>
     </div>
 </template>
