@@ -32,6 +32,7 @@ export default {
             color_text_map: {
                 "date": {"color": "#867d78",},
                 "new_paper": {"color": "#ac4142", "text": "New paper",},
+                "new_tool": {"color": "#ac4142", "text": "New tool",},
                 "new_preprint": {"color": "#006298", "text": "New preprint",},
                 "personal_news": {"color": "#66435A", "text": "Personal",}
             },
