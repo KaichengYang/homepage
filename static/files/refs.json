@@ -18,6 +18,12 @@
         "highlight": [],
         "title": "Online misinformation is linked to early COVID-19 vaccination hesitancy and refusal.",
         "id": "pierri2020impact",
+        "medias": [
+            {
+                "url": "https://slate.com/technology/2022/04/elon-musk-free-speech-twitter-for-whom.html",
+                "name": "Slate"
+            }
+        ],
         "links": [
             {
                 "url": "https://doi.org/10.1038/s41598-022-10070-w",
@@ -116,6 +122,10 @@
             {
                 "url": "https://www.futurity.org/twitter-politics-bias-users-2636992-2/",
                 "name": "Futurity"
+            },
+            {
+                "url": "https://www.rollingstone.com/culture/culture-news/elon-musk-twitter-cernovich-far-right-abuse-1343566/",
+                "name": "Rolling Stone"
             }
         ],
         "links": [
