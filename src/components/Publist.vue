@@ -47,11 +47,12 @@ export default {
         socialmedia: "Bad Actors and Misinformation on Social Media",
         conf: "Conference Proceedings",
         journal: "Journal Articles",
-        preprint: "Preprints"
+        preprint: "Preprints",
+        other: "Other Works"
       },
       default_paper_meta_order: {
         topic: ["socialmedia", "covid", "opioid", "netsci"],
-        type: ["preprint", "journal", "conf"],
+        type: ["preprint", "journal", "conf", "other"],
         year: [2022, 2021, 2020, 2019, 2018, 2017]
       }
     }

@@ -31,6 +31,7 @@ export default {
       news_list: json,
       color_text_map: {
         "date": {"color": "#867d78",},
+        "new_article": {"color": "#ac4142", "text": "New article",},
         "new_paper": {"color": "#ac4142", "text": "New paper",},
         "new_tool": {"color": "#ac4142", "text": "New tool",},
         "new_preprint": {"color": "#006298", "text": "New preprint",},
