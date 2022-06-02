@@ -31,11 +31,10 @@ export default {
       news_list: json,
       color_text_map: {
         "date": {"color": "#867d78",},
-        "new_article": {"color": "#ac4142", "text": "New article",},
-        "new_paper": {"color": "#ac4142", "text": "New paper",},
-        "new_tool": {"color": "#ac4142", "text": "New tool",},
-        "new_preprint": {"color": "#006298", "text": "New preprint",},
-        "personal_news": {"color": "#66435A", "text": "Personal",}
+        "new_pub": {"color": "#ac4142", "text": "Publication",},
+        "new_tool": {"color": "#4A3C31", "text": "Tool",},
+        "new_preprint": {"color": "#66435A", "text": "Preprint",},
+        "personal_news": {"color": "#006298", "text": "Personal",}
       },
     }
   },
