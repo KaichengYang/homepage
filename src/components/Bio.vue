@@ -38,8 +38,9 @@
           Luddy School of Informatics, Computing, and Engineering</a>
           in Indiana University Bloomington.
         I mainly work with <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>,
-          <a href="http://yongyeol.com/" target="_blank">Yong-Yeol Ahn</a>, and
-          <a href="https://sociology.indiana.edu/about/faculty/perry-brea.html" target="_blank">Brea L. Perry</a>.
+          <a href="http://yongyeol.com/" target="_blank">Yong-Yeol Ahn</a>,
+          <a href="https://sociology.indiana.edu/about/faculty/perry-brea.html" target="_blank">Brea L. Perry</a>, and
+          <a href="https://cnets.indiana.edu/aflammin/" target="_blank">Alessandro Flammini</a>.
       </p>
 
       <p>
