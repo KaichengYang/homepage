@@ -33,6 +33,11 @@
       <Publist v-bind:view="'highlight'"/>
       <hr>
 
+      <!-- Media -->
+      <h2 id="media" class="mt-3">Media coverage</h2>
+      <Media />
+      <hr>
+
       <!-- About -->
       <div id="about" class="mt-3 mb-5">
         <h2 class="mt-3">About</h2>
@@ -56,6 +61,7 @@ import News from './News'
 import Publist from './Publist'
 import Project from './Project'
 import Tool from './Tool'
+import Media from './Media'
 
 export default {
   name: 'Home',
@@ -65,7 +71,8 @@ export default {
     News,
     Publist,
     Project,
-    Tool
+    Tool,
+    Media
   }
 }
 </script>

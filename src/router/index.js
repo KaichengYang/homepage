@@ -15,6 +15,7 @@ import PublistPage from '@/components/PublistPage'
 import NewsPage from '@/components/NewsPage'
 import ToolPage from '@/components/ToolPage'
 import Failures from '@/components/Failures'
+import MediaPage from '@/components/MediaPage'
 
 Vue.use(Router)
 Vue.use(BootstrapVue)
@@ -45,6 +46,11 @@ export default new Router({
       path: '/failures',
       name: 'FailuresPage',
       component: Failures
+    },
+    {
+      path: '/media',
+      name: 'MediaPage',
+      component: MediaPage
     },
     {
       path: '*',
