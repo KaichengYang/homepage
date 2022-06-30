@@ -17,7 +17,8 @@
 </template>
 
 <script>
-import json from '../../static/files/refs.json'
+import refs_json from '../../static/files/refs.json'
+import media_json from '../../static/files/media.json'
 import BackForth from './BackForth'
 import PublistUnit from './PublistUnit'
 
@@ -39,7 +40,7 @@ export default {
   },
   data () {
     return {
-      refs: json,
+      refs: this.assign_media_to_refs(refs_json, media_json),
       paper_meta_mapping: {
         covid: "COVID-19 Pandemic",
         netsci: "Network Science",
@@ -67,6 +68,20 @@ export default {
     }
   },
   methods: {
+    assign_media_to_refs: function (refs_json, media_json) {
+      refs_json.forEach(function (ref) {
+        var media_list = [];
+        media_json.forEach(function (media) {
+          if(media.project_id && media.project_id.indexOf(ref.id) >= 0){
+            media_list.push(media);
+          }
+        });
+        if (media_list.length > 0){
+          ref["media"] = media_list;
+        }
+      });
+      return refs_json;
+    },
     get_paper_chunks: function (classifier_name) {
       let classifier_list = null;
       if(classifier_name in this.default_paper_meta_order){
