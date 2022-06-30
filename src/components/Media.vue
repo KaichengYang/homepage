@@ -5,7 +5,7 @@
         <img :src="'static/logos/' + media.outlet + '.png'" class="mr-5">
         | {{ media.date }}
         <br>
-        <a :href="media.url" target="_blank" class="text-justify">{{ media.title }}</a>
+        <a :href="media.url" target="_blank" class="my-1">{{ media.title }}</a>
         <!-- <span class="badge" :style="box_style(color_map['date']['color'], 'short')">{{ media.date }}</span> -->
       </li>
     </ol>
