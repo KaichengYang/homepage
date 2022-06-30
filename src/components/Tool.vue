@@ -17,10 +17,20 @@
           </b-card-text>
 
           <span v-if="tool.links">
-            <span v-for="(link, index) in tool.links">
+            <span v-for="(link, index) in tool.links" :key="index">
               <a v-bind:href="link.url" target="_blank"><i v-bind:class="get_pub_icon(link.name)"></i> {{ link.name }}</a>
               <span v-if="index != tool.links.length - 1">| </span>
             </span>
+          </span>
+
+          <span v-if="tool.media">
+            <p>
+              <i>Media coverage: </i>
+              <span v-for="(link, index) in tool.media.slice(0, 3)" :key="index">
+                <a v-bind:href="link.url" target="_blank"><i v-bind:class="get_pub_icon(link.outlet)"></i> {{ link.outlet }}</a>
+                <span v-if="index != tool.media.slice(0, 3).length - 1">| </span>
+              </span>
+            </p>
           </span>
 
           </b-card>
@@ -33,7 +43,8 @@
 </template>
 
 <script>
-import json from '../../static/files/tools.json'
+import tools_json from '../../static/files/tools.json'
+import media_json from '../../static/files/media.json'
 import libs from './libs'
 import BackForth from './BackForth'
 
@@ -51,7 +62,7 @@ export default {
   mixins: [libs],
   data () {
     return {
-      tools_list: json,
+      tools_list: this.assign_media_to_tools(tools_json, media_json),
       libs: libs
     }
   },
@@ -62,6 +73,22 @@ export default {
       }else{
         return this.tools_list;
       }
+    }
+  },
+  methods: {
+    assign_media_to_tools: function (tools_json, media_json) {
+      tools_json.forEach(function (tool) {
+        var media_list = [];
+        media_json.forEach(function (media) {
+          if(media.project_id && media.project_id.indexOf(tool.id) >= 0){
+            media_list.push(media);
+          }
+        });
+        if (media_list.length > 0){
+          tool["media"] = media_list;
+        }
+      });
+      return tools_json;
     }
   }
 }
