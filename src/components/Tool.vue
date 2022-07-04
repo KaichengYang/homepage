@@ -12,20 +12,23 @@
             <template v-if="tool.image">
             <b-card-img :src="'static/images/' + tool.image + '.png'" alt="" top></b-card-img>
             </template>
-          <b-card-text>
+          <b-card-text class="mb-2">
             {{ tool.msg }}
           </b-card-text>
 
-          <span v-if="tool.links">
-            <span v-for="(link, index) in tool.links" :key="index">
-              <a v-bind:href="link.url" target="_blank"><i v-bind:class="get_pub_icon(link.name)"></i> {{ link.name }}</a>
-              <span v-if="index != tool.links.length - 1">| </span>
-            </span>
-          </span>
+          <div v-if="tool.links" class="mb-2">
+            <p class="mb-1">
+              Links:
+              <span v-for="(link, index) in tool.links" :key="index">
+                <a v-bind:href="link.url" target="_blank"><i v-bind:class="get_pub_icon(link.name)"></i> {{ link.name }}</a>
+                <span v-if="index != tool.links.length - 1">| </span>
+              </span>
+            </p>
+          </div>
 
           <span v-if="tool.media">
-            <p>
-              <i>Media coverage: </i>
+            <p class="mb-2">
+              Media coverage:
               <span v-for="(link, index) in tool.media.slice(0, 3)" :key="index">
                 <a v-bind:href="link.url" target="_blank"><i v-bind:class="get_pub_icon(link.outlet)"></i> {{ link.outlet }}</a>
                 <span v-if="index != tool.media.slice(0, 3).length - 1">| </span>
