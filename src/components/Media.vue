@@ -13,7 +13,7 @@
             Mentioning
             <template v-for="(ref, index) in media.ref" :href="ref.link">
               <template v-if="index > 0"> and </template>
-              <a :href="ref.link" target="_blank"> {{ ref.title }} </a>
+              <a :href="ref.link.url" target="_blank"> {{ ref.title }} </a>
             </template>
           </p>
         </span>
