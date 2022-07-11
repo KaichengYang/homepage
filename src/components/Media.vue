@@ -51,10 +51,11 @@ export default {
   },
   computed: {
     media_to_show () {
+      var temp_media_list = this.media_list.filter(media => media.toshow);
       if (this.is_home){
-        return this.media_list.slice(0, 5);
+        return temp_media_list.slice(0, 5);
       }else{
-        return this.media_list;
+        return temp_media_list;
       }
     }
   },
