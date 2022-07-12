@@ -83,7 +83,7 @@ export default {
       tools_json.forEach(function (tool) {
         var media_list = [];
         media_json.forEach(function (media) {
-          if(media.project_id && media.project_id.indexOf(tool.id) >= 0){
+          if(media.toshow && media.project_id && media.project_id.indexOf(tool.id) >= 0){
             media_list.push(media);
           }
         });

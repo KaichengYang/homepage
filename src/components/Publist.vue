@@ -72,7 +72,7 @@ export default {
       refs_json.forEach(function (ref) {
         var media_list = [];
         media_json.forEach(function (media) {
-          if(media.project_id && media.project_id.indexOf(ref.id) >= 0){
+          if(media.toshow && media.project_id && media.project_id.indexOf(ref.id) >= 0){
             media_list.push(media);
           }
         });
