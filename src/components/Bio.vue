@@ -44,7 +44,7 @@
       </p>
 
       <p>
-        I'm <b>on the job market</b>, seeking academic positions in information science, data science, computer science, and complex systems departments starting in fall 2022.
+        I'm <b>on the job market</b>, seeking academic positions in information science, data science, computer science, and complex systems departments.
         Please contact me with relevant opportunities!
       </p>
 
