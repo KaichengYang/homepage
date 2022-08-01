@@ -6,9 +6,11 @@
         <img class="avatar mx-auto" src="static/images/avatar.png">
         <div id="bio" class="mt-2">
           <h2>Kai-Cheng Yang</h2>
+          <p id="title">Ph.D. candidate</p>
+          <p id="title">Indiana University</p>
         </div>
 
-        <div id="contact_container">
+        <div id="contact_container" class="mt-1">
           <a href="mailto:yangkc@iu.edu" class="contact_icon">
             <i class="fas fa-envelope"></i>
           </a>
@@ -53,6 +55,7 @@
         Particularly, I analyze social media and medical claims data to identify inauthentic actors and adverse behaviors and study their implications for online information ecosystem and public health.
         You can check out my <a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more.
         I also develop <a href="#" v-scroll-to="'#tool'">tools</a> that you may find useful.
+        These works have been <a href="#" v-scroll-to="'#media'">covered</a> by vairous meida outlets.
       </p>
 
       <p>
@@ -66,3 +69,11 @@ export default {
   name: 'Bio'
 }
 </script>
+
+<style scoped>
+#title {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  color: rgb(139, 139, 139);
+}
+</style>
