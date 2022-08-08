@@ -8,6 +8,7 @@
         <a :href="media.url" target="_blank" class="my-1">{{ media.title }}</a>
         <br>
         <span v-if="!is_home">
+          <p v-if="media.type == 'interview'">Interviewing me</p>
           <p v-if="media.type == 'quotation'">Quoting me</p>
           <p v-if="media.type == 'coverage' && media.ref">
             Mentioning
