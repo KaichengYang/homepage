@@ -34,7 +34,7 @@
       <hr>
 
       <!-- Media -->
-      <h2 id="media" class="mt-3">Media coverage</h2>
+      <h2 id="media" class="mt-3">Selected media coverage</h2>
       <Media />
       <hr>
 

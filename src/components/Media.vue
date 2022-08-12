@@ -3,21 +3,22 @@
     <ol class="mt-3">
       <li v-for="media in media_to_show" :key="media.title">
         <img :src="'static/logos/' + media.outlet + '.png'" class="mr-5">
+        | {{ media.outlet }}
         | {{ media.date }}
         <br>
         <a :href="media.url" target="_blank" class="my-1">{{ media.title }}</a>
         <br>
-        <span v-if="!is_home">
-          <p v-if="media.type == 'interview'">Interviewing me</p>
-          <p v-if="media.type == 'quotation'">Quoting me</p>
-          <p v-if="media.type == 'coverage' && media.ref">
-            Mentioning
-            <template v-for="(ref, index) in media.ref" :href="ref.link">
-              <template v-if="index > 0"> and </template>
-              <a :href="ref.link.url" target="_blank"> {{ ref.title }} </a>
-            </template>
-          </p>
-        </span>
+        <!-- <span v-if="!is_home"> -->
+        <p v-if="media.type == 'interview'">Interviewing me</p>
+        <p v-if="media.type == 'quotation'">Quoting me</p>
+        <p v-if="media.type == 'coverage' && media.ref">
+          Mentioning
+          <template v-for="(ref, index) in media.ref" :href="ref.link">
+            <template v-if="index > 0"> and </template>
+            <a :href="ref.link.url" target="_blank"> {{ ref.title }} </a>
+          </template>
+        </p>
+        <!-- </span> -->
       </li>
     </ol>
     <BackForth v-bind:is_home="is_home" v-bind:target="'/media'"/>
@@ -39,6 +40,10 @@ export default {
     is_home: {
       type: Boolean,
       default: true
+    },
+    view: {
+      type: String,
+      default: "year"
     }
   },
   data () {
@@ -52,9 +57,9 @@ export default {
   },
   computed: {
     media_to_show () {
-      var temp_media_list = this.media_list.filter(media => media.toshow);
+      let temp_media_list = this.media_list.filter(media => media.toshow);
       if (this.is_home){
-        return temp_media_list.slice(0, 5);
+        return temp_media_list.filter(media => media.highlight).slice(0, 5);
       }else{
         return temp_media_list;
       }
@@ -63,7 +68,7 @@ export default {
   methods: {
     assign_projects_to_media: function (refs_json, tools_json, media_json) {
       media_json.forEach(function (media) {
-        var ref_list = [];
+        let ref_list = [];
         tools_json.forEach(function (tool) {
           if(media.project_id && media.project_id.indexOf(tool.id) >= 0){
             ref_list.push({
