@@ -111,6 +111,18 @@
     "toshow": true
   },
   {
+    "title": "Elon Musk accuses Twitter of fraud for hiding real number of fake accounts",
+    "url": "https://www.engadget.com/elon-musk-accuses-twitter-of-fraud-fake-accounts-073225706.html",
+    "outlet": "Engadget",
+    "date": "Aug 5, 2022",
+    "type": "coverage",
+    "topic": "social bot",
+    "project_id": [
+      "botometer"
+    ],
+    "toshow": true
+  },
+  {
     "title": "Musk's countersuit contains aggressive new claims. Twitter is rebutting them.",
     "url": "https://www.washingtonpost.com/technology/2022/08/04/elon-musk-twitter/",
     "outlet": "The Washington Post",
