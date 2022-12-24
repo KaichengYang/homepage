@@ -34,8 +34,9 @@ export default {
         "new_pub": {"color": "#ac4142", "text": "Publication",},
         "new_tool": {"color": "#4A3C31", "text": "Tool",},
         "new_preprint": {"color": "#66435A", "text": "Preprint",},
-        "personal_news": {"color": "#006298", "text": "Personal",},
-        "talk": {"color": "#4A3C31", "text": "Talk",}
+        "personal_news": {"color": "#006298", "text": "General",},
+        "talk": {"color": "#4A3C31", "text": "Talk",},
+        "general": {"color": "#006298", "text": "General",},
       },
     }
   },
