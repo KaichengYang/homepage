@@ -19,15 +19,20 @@
           <span v-if="paper.media">
             <i>Media Coverage: </i>
             <span v-for="(media, index) in paper.media" :key="index">
-              <a v-bind:href="media.url" target="_blank"><i class="fas fa-external-link-alt"></i> {{ media.outlet }}</a>
+              <a v-bind:href="media.url" target="_blank">{{ media.outlet }} <i class="fas fa-external-link-alt"></i> </a>
               <span v-if="index != paper.media.length - 1">| </span>
             </span>
             <br>
           </span>
 
+          <span v-if="paper.hornor">
+              🏆 {{ paper.hornor.text }} <a v-if="paper.hornor.url" v-bind:href="paper.hornor.url" target="_blank"> <i class="fas fa-external-link-alt"></i> </a>
+              <br>
+          </span>
+
           <span v-if="paper.links">
             <span v-for="(link, index) in paper.links" :key="index">
-              <a v-bind:href="link.url" target="_blank"><i v-bind:class="get_pub_icon(link.name)"></i> {{ link.name }}</a>
+              <a v-bind:href="link.url" target="_blank"> {{ link.name }} <i v-bind:class="get_pub_icon(link.name)"></i> </a>
               <span v-if="index != paper.links.length - 1">| </span>
             </span>
           </span>

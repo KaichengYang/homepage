@@ -45,14 +45,17 @@ export default {
         covid: "COVID-19 Pandemic",
         netsci: "Network Science",
         opioid: "Opioid Epidemic in U.S.",
-        socialmedia: "Bad Actors and Misinformation on Social Media",
+        socialmedia: "Social Media",
+        bot: "Social bot",
+        misinformation: "Misinformation",
+        politics: "Politics",
         conf: "Conference Proceedings",
         journal: "Journal Articles",
         preprint: "Preprints",
         other: "Other Works"
       },
       default_paper_meta_order: {
-        topic: ["socialmedia", "covid", "opioid", "netsci"],
+        topic: ["socialmedia", "bot", "misinformation", "politics", "covid", "opioid", "netsci"],
         type: ["preprint", "journal", "conf", "other"],
         year: [2023, 2022, 2021, 2020, 2019, 2018, 2017]
       }
