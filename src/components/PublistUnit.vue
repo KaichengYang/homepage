@@ -14,6 +14,10 @@
           <span v-if="paper.note">
             ({{ paper.note }})
           </span>
+          <!-- For altmetric -->
+          <template v-if="paper.altmetric">
+            <span data-badge-type="2" :data-doi="paper.altmetric.doi_id" :data-arxiv-id="paper.altmetric.arxiv_id" data-link-target='_blank' data-hide-no-mentions="true" class="altmetric-embed">|</span>
+          </template>
           <br>
 
           <span v-if="paper.links">
