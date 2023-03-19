@@ -6,6 +6,10 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  updated () {
+    // initialize altmetric everytime the page is updated
+    _altmetric_embed_init();
+  }
 }
 </script>

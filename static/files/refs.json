@@ -1,5 +1,35 @@
 [
   {
+    "authors": "DeVerna, M. R., Aiyappa, R., Zhao, W., Pote, M., Truong, B. T., Axelrod, D., Pessianzadeh, A., Kachwala, Z., Kim, M., Seckin, O. C., Kim, M., Gandhi, S., Manikonda, A., Pierri, F., Menczer, F. & <u>Yang, K. C.</u>",
+    "year": [
+      2023
+    ],
+    "type": [
+      "preprint"
+    ],
+    "topic": [
+      "socialmedia",
+      "politics"
+    ],
+    "highlight": [],
+    "title": "A multi-platform collection of social media posts about the 2022 U.S. midterm elections",
+    "id": "deverna2023multiplatform",
+    "venue": "Forthcoming in ICWSM23.",
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2301.06287",
+        "name": "arXiv"
+      },
+      {
+        "url": "https://github.com/osome-iu/MEIU22",
+        "name": "GitHub"
+      }
+    ],
+    "altmetric": {
+      "arxiv_id": "2301.06287"
+    }
+  },
+  {
     "title": "One Year of COVID-19 Vaccine Misinformation on Twitter: Longitudinal Study",
     "authors": "Pierri, F., DeVerna, M., <u>Yang, K. C.</u>, Axelrod, D., Bryden, J., & Menczer, F.",
     "year": [
@@ -29,36 +59,6 @@
     ],
     "altmetric": {
       "doi_id": "10.2196/42227"
-    }
-  },
-  {
-    "authors": "DeVerna, M. R., Aiyappa, R., Zhao, W., Pote, M., Truong, B. T., Axelrod, D., Pessianzadeh, A., Kachwala, Z., Kim, M., Seckin, O. C., Kim, M., Gandhi, S., Manikonda, A., Pierri, F., Menczer, F. & <u>Yang, K. C.</u>",
-    "year": [
-      2023
-    ],
-    "type": [
-      "preprint"
-    ],
-    "topic": [
-      "socialmedia",
-      "politics"
-    ],
-    "highlight": [],
-    "title": "A multi-platform collection of social media posts about the 2022 U.S. midterm elections",
-    "id": "deverna2023multiplatform",
-    "venue": "In submission.",
-    "links": [
-      {
-        "url": "https://arxiv.org/abs/2301.06287",
-        "name": "arXiv"
-      },
-      {
-        "url": "https://github.com/osome-iu/MEIU22",
-        "name": "GitHub"
-      }
-    ],
-    "altmetric": {
-      "arxiv_id": "2301.06287"
     }
   },
   {
