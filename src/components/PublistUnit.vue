@@ -29,8 +29,12 @@
             <br>
           </span>
 
-          <span v-if="paper.hornor">
-              🏆 {{ paper.hornor.text }} <a v-if="paper.hornor.url" v-bind:href="paper.hornor.url" target="_blank"> <i class="fas fa-external-link-alt"></i> </a>
+          <span v-if="paper.hornors">
+              🏆
+              <span v-for="(link, index) in paper.hornors" :key="index">
+                {{ link.text }} <a v-if="link.url" v-bind:href="link.url" target="_blank"> <i class="fas fa-external-link-alt"></i> </a>
+                <span v-if="index != paper.hornors.length - 1">| </span>
+              </span>
               <br>
           </span>
 
