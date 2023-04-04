@@ -52,10 +52,11 @@ export default {
         conf: "Conference Proceedings",
         journal: "Journal Articles",
         preprint: "Preprints",
+        llm: "LLM",
         other: "Other Works"
       },
       default_paper_meta_order: {
-        topic: ["socialmedia", "bot", "misinformation", "politics", "covid", "opioid", "netsci"],
+        topic: ["socialmedia", "bot", "misinformation", "llm", "politics", "covid", "opioid", "netsci"],
         type: ["preprint", "journal", "conf", "other"],
         year: [2023, 2022, 2021, 2020, 2019, 2018, 2017]
       }
