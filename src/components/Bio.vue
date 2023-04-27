@@ -11,7 +11,7 @@
         </div>
 
         <div id="contact_container" class="mt-1">
-          <a href="mailto:yangkc@iu.edu" class="contact_icon">
+          <a href="mailto:yang3kc@gmail.com" class="contact_icon">
             <i class="fas fa-envelope"></i>
           </a>
           <a href="static/files/cv.pdf" class="contact_icon">
