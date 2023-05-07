@@ -15,16 +15,6 @@
       </p>
       <hr>
 
-      <!-- Project -->
-      <h2 id="project" class="mt-3">Research project highlights</h2>
-      <Project />
-      <hr>
-
-      <!-- Tools -->
-      <h2 id="tool" class="mt-3">Tools</h2>
-      <Tool />
-      <hr>
-
       <!-- Publication -->
       <h2 class="mt-3" id="publication">Selected publications</h2>
       <p class="my-3">
@@ -32,6 +22,17 @@
       </p>
       <Publist v-bind:view="'highlight'"/>
       <hr>
+
+      <!-- Project -->
+      <!-- <h2 id="project" class="mt-3">Research project highlights</h2> -->
+      <!-- <Project /> -->
+      <!-- <hr> -->
+
+      <!-- Tools -->
+      <h2 id="tool" class="mt-3">Selected tools</h2>
+      <Tool />
+      <hr>
+
 
       <!-- Media -->
       <h2 id="media" class="mt-3">Selected media coverage</h2>
