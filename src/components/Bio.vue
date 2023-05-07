@@ -46,8 +46,9 @@
       </p>
 
       <p>
-        You can check out my <a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more.
-        I also develop <a href="#" v-scroll-to="'#tool'">tools</a> that you may find useful.
+        You can check out my
+        <!-- <a href="#" v-scroll-to="'#project'">research projects</a> and  -->
+        <a href="#" v-scroll-to="'#publication'">publications</a> and <a href="#" v-scroll-to="'#tool'">tools</a> to learn more.
         These works have been <a href="#" v-scroll-to="'#media'">covered</a> by vairous meida outlets.
       </p>
 
