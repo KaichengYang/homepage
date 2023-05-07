@@ -5,8 +5,7 @@
       <div class="mx-auto">
         <img class="avatar mx-auto" src="static/images/avatar.png">
         <div id="bio" class="mt-2">
-          <h2>Kai-Cheng Yang</h2>
-          <p id="title">Ph.D. candidate</p>
+          <h2>Kai-Cheng Yang, Ph.D.</h2>
           <p id="title">Indiana University</p>
         </div>
 
@@ -35,19 +34,18 @@
     <div class="col-12 col-lg-8 bio-text">
       <h2>Bio</h2>
       <p>
-        Hi! I'm Kai-Cheng Yang (杨凯程), the pronunciation is KY-cheng YAHNG. You can also call me Kevin.
-        I'm a Ph.D. candidate in Informatics at <a href="https://luddy.indiana.edu/" target="_blank">
+        Hi! I'm Kai-Cheng Yang (pronunced KY-cheng YAHNG). You can also call me Kevin.
+        I obtained my Ph.D. in Informatics from <a href="https://luddy.indiana.edu/" target="_blank">
           Luddy School of Informatics, Computing, and Engineering</a>
-          in Indiana University Bloomington.
-        I mainly work with <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>,
-          <a href="http://yongyeol.com/" target="_blank">Yong-Yeol Ahn</a>,
-          <a href="https://sociology.indiana.edu/about/faculty/perry-brea.html" target="_blank">Brea L. Perry</a>, and
-          <a href="https://cnets.indiana.edu/aflammin/" target="_blank">Alessandro Flammini</a>.
+          in Indiana University Bloomington, advised by <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>, <a href="http://yongyeol.com/" target="_blank">Yong-Yeol Ahn</a>, and <a href="https://sociology.indiana.edu/about/faculty/perry-brea.html" target="_blank">Brea L. Perry</a>.
       </p>
 
       <p>
-        I'm interested in computational social science and network science.
-        Particularly, I analyze social media and medical claims data to identify inauthentic actors and adverse behaviors and study their implications for online information ecosystem and public health.
+        I'm interested in computational social science with a focus on identifying bad actors, such as malicious social bots and studying the diffusion of misinformation on social media.
+        In particular, my research aims to uncover how generative AI is used for deceptive and disruptive purposes and develop countermeasures leveraging AI technologies.
+      </p>
+
+      <p>
         You can check out my <a href="#" v-scroll-to="'#project'">research projects</a> and <a href="#" v-scroll-to="'#publication'">publications</a> to learn more.
         I also develop <a href="#" v-scroll-to="'#tool'">tools</a> that you may find useful.
         These works have been <a href="#" v-scroll-to="'#media'">covered</a> by vairous meida outlets.
