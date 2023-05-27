@@ -41,7 +41,7 @@
       </p>
 
       <p>
-        I'm interested in computational social science with a focus on identifying bad actors, such as malicious social bots and studying the diffusion of misinformation on social media.
+        I'm interested in computational social science with a focus on identifying bad actors, such as malicious social bots, and studying the diffusion of misinformation on social media.
         In particular, my research aims to uncover how generative AI is used for deceptive and disruptive purposes and develop countermeasures leveraging AI technologies.
       </p>
 
