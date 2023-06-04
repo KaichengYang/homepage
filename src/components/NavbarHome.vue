@@ -7,7 +7,6 @@
     <b-collapse is-nav id="nav_collapse">
       <b-navbar-nav>
         <b-nav-item href="#" v-scroll-to="'#news'">News</b-nav-item>
-        <b-nav-item href="#" v-scroll-to="'#project'">Research</b-nav-item>
         <b-nav-item href="#" v-scroll-to="'#tool'">Tools</b-nav-item>
         <b-nav-item href="#" v-scroll-to="'#publication'">Publications</b-nav-item>
         <b-nav-item href="#" v-scroll-to="'#media'">Media</b-nav-item>
