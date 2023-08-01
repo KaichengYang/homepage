@@ -37,12 +37,13 @@
         Hi! I'm Kai-Cheng Yang (pronunced KY-cheng YAHNG). You can also call me Kevin.
         I obtained my Ph.D. in Informatics from <a href="https://luddy.indiana.edu/" target="_blank">
           Luddy School of Informatics, Computing, and Engineering</a>
-          in Indiana University Bloomington, advised by <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>, <a href="http://yongyeol.com/" target="_blank">Yong-Yeol Ahn</a>, and <a href="https://sociology.indiana.edu/about/faculty/perry-brea.html" target="_blank">Brea L. Perry</a>.
+          in Indiana University Bloomington., advised by <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>, <a href="http://yongyeol.com/" target="_blank">Yong-Yeol Ahn</a>, and <a href="https://sociology.indiana.edu/about/faculty/perry-brea.html" target="_blank">Brea L. Perry</a>.
       </p>
 
       <p>
-        I'm interested in computational social science with a focus on identifying bad actors, such as malicious social bots, and studying the diffusion of misinformation on social media.
-        In particular, my research aims to uncover how generative AI is used for deceptive and disruptive purposes and develop countermeasures leveraging AI technologies.
+        I'm interested in computational social science.
+        My research aims to uncover how technologies like generative AI are used for deceptive and disruptive purposes, study how humans react to these abuses, and develop countermeasures.
+        Specifically, I focus on bad actors like malicious social bots and misinformation on social media.
       </p>
 
       <p>
