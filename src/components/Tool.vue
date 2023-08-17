@@ -18,9 +18,9 @@
 
           <div v-if="tool.links" class="mb-2">
             <p class="mb-1">
-              Links:
+            🔗
               <span v-for="(link, index) in tool.links" :key="index">
-                <a v-bind:href="link.url" target="_blank"><i v-bind:class="get_pub_icon(link.name)"></i> {{ link.name }}</a>
+                <a v-bind:href="link.url" target="_blank"> {{ link.name }} <i v-bind:class="get_pub_icon(link.name)"></i></a>
                 <span v-if="index != tool.links.length - 1">| </span>
               </span>
             </p>
@@ -28,9 +28,9 @@
 
           <span v-if="tool.media">
             <p class="mb-2">
-              Media coverage:
+            📰
               <span v-for="(link, index) in tool.media.slice(0, 3)" :key="index">
-                <a v-bind:href="link.url" target="_blank"><i v-bind:class="get_pub_icon(link.outlet)"></i> {{ link.outlet }}</a>
+                <a v-bind:href="link.url" target="_blank"> {{ link.outlet }} <i v-bind:class="get_pub_icon(link.outlet)"></i></a>
                 <span v-if="index != tool.media.slice(0, 3).length - 1">| </span>
               </span>
             </p>
