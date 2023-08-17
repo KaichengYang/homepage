@@ -9,15 +9,15 @@
         <a :href="media.url" target="_blank" class="my-1">{{ media.title }}</a>
         <br>
         <!-- <span v-if="!is_home"> -->
-        <p v-if="media.type == 'interview'">Interviewing me</p>
-        <p v-if="media.type == 'quotation'">Quoting me</p>
-        <p v-if="media.type == 'coverage' && media.ref">
-          Mentioning
+        <span v-if="media.type == 'interview'" class="badge" :style="box_style('#006298', 'long')">Interviewing me</span>
+        <span v-if="media.type == 'quotation'" class="badge" :style="box_style('#006298')">Quoting me</span>
+        <template v-if="media.type == 'coverage' && media.ref">
+          <span class="badge" :style="box_style('#ac4142')">          Mentioning</span>
           <template v-for="(ref, index) in media.ref" :href="ref.link">
             <template v-if="index > 0"> and </template>
             <a :href="ref.link.url" target="_blank"> {{ ref.title }} </a>
           </template>
-        </p>
+        </template>
         <!-- </span> -->
       </li>
     </ol>
@@ -95,8 +95,9 @@ export default {
     box_style (color, length) {
       return {
         "display" : "inline-block",
-        "width": (length === "long") ? "160px": "110px",
-        "background-color": color
+        "width": (length === "long") ? "110px": "85px",
+        "background-color": color,
+        "font-size": "12px"
       }
     }
   }
