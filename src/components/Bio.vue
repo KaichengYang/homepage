@@ -34,7 +34,7 @@
     <div class="col-12 col-lg-8 bio-text">
       <h2>Bio</h2>
       <p>
-        Hi! I'm Kai-Cheng Yang (pronunced KY-cheng YAHNG). You can also call me Kevin.
+        Hi! I'm Kai-Cheng Yang (pronounced KY-cheng YAHNG). You can also call me Kevin.
         I obtained my Ph.D. in Informatics from <a href="https://luddy.indiana.edu/" target="_blank">
           Luddy School of Informatics, Computing, and Engineering</a>
           in Indiana University Bloomington., advised by <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>, <a href="http://yongyeol.com/" target="_blank">Yong-Yeol Ahn</a>, and <a href="https://sociology.indiana.edu/about/faculty/perry-brea.html" target="_blank">Brea L. Perry</a>.
@@ -50,7 +50,7 @@
         You can check out my
         <!-- <a href="#" v-scroll-to="'#project'">research projects</a> and  -->
         <a href="#" v-scroll-to="'#publication'">publications</a> and <a href="#" v-scroll-to="'#tool'">tools</a> to learn more.
-        These works have been <a href="#" v-scroll-to="'#media'">covered</a> by vairous meida outlets.
+        These works have been <a href="#" v-scroll-to="'#media'">covered</a> by various media outlets.
       </p>
 
       <p>
