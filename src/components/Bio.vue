@@ -6,7 +6,8 @@
         <img class="avatar mx-auto" src="static/images/avatar.png">
         <div id="bio" class="mt-2">
           <h2>Kai-Cheng Yang, Ph.D.</h2>
-          <p id="title">Indiana University</p>
+          <p id="title">Postdoctoral researcher</p>
+          <p id="title">Northeastern University</p>
         </div>
 
         <div id="contact_container" class="mt-1">
@@ -35,9 +36,10 @@
       <h2>Bio</h2>
       <p>
         Hi! I'm Kai-Cheng Yang (pronounced KY-cheng YAHNG). You can also call me Kevin.
+        I'm a postdoctoral researcher at Northeastern University working with <a href="https://lazerlab.net" target="_blnak">David Lazer</a>.
         I obtained my Ph.D. in Informatics from <a href="https://luddy.indiana.edu/" target="_blank">
           Luddy School of Informatics, Computing, and Engineering</a>
-          in Indiana University Bloomington., advised by <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>, <a href="http://yongyeol.com/" target="_blank">Yong-Yeol Ahn</a>, and <a href="https://sociology.indiana.edu/about/faculty/perry-brea.html" target="_blank">Brea L. Perry</a>.
+          in Indiana University Bloomington.
       </p>
 
       <p>
