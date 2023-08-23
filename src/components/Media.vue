@@ -6,7 +6,7 @@
         | {{ media.outlet }}
         | {{ media.date }}
         <br>
-        <a :href="media.url" target="_blank" class="my-1">{{ media.title }}</a>
+        <a :href="media.url" target="_blank" class="my-1">{{ media.title }} <i class="fas fa-external-link-alt"></i> </a>
         <br>
         <!-- <span v-if="!is_home"> -->
         <span v-if="media.type == 'interview'" class="badge" :style="box_style('#006298', 'long')">Interviewing me</span>
@@ -15,7 +15,7 @@
           <span class="badge" :style="box_style('#ac4142')">          Mentioning</span>
           <template v-for="(ref, index) in media.ref" :href="ref.link">
             <template v-if="index > 0"> and </template>
-            <a :href="ref.link.url" target="_blank"> {{ ref.title }} </a>
+            <a :href="ref.link.url" target="_blank"> {{ ref.title }}</a>
           </template>
         </template>
         <!-- </span> -->
