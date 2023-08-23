@@ -39,7 +39,7 @@
         I'm a postdoctoral researcher at Northeastern University working with <a href="https://lazerlab.net" target="_blnak">David Lazer</a>.
         I obtained my Ph.D. in Informatics from <a href="https://luddy.indiana.edu/" target="_blank">
           Luddy School of Informatics, Computing, and Engineering</a>
-          in Indiana University Bloomington.
+        in Indiana University Bloomington, advised by <a href="http://cnets.indiana.edu/fil/" target="_blank">Filippo Menczer</a>.
       </p>
 
       <p>
