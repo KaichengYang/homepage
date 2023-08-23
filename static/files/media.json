@@ -1,5 +1,20 @@
 [
   {
+    "title": "Large language models can rate news outlet credibility",
+    "url": "https://www.rstreet.org/commentary/large-language-models-can-rate-news-outlet-credibility/",
+    "outlet": "RStreet",
+    "date": "Aug 21, 2023",
+    "year": [
+      2023
+    ],
+    "type": "coverage",
+    "topic": "llm",
+    "project_id": [
+      "yang2023large"
+    ],
+    "toshow": true
+  },
+  {
     "title": "AI is ruining the internet",
     "url": "https://www.businessinsider.com/ai-scam-spam-hacking-ruining-internet-chatgpt-privacy-misinformation-2023-8",
     "outlet": "Business Insider",
