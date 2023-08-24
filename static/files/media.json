@@ -1,5 +1,21 @@
 [
   {
+    "title": "Scientists found more than 1,000 AI spam bots trying to scam people and steal their social media profiles — and regulators can't keep up",
+    "url": "https://www.businessinsider.com/social-media-flooded-spammy-ai-content-2023-8",
+    "outlet": "Business Insider",
+    "date": "Aug 24, 2023",
+    "year": [
+      2023
+    ],
+    "type": "quotation",
+    "topic": "social bot",
+    "project_id": [
+      "yang2023anatomy"
+    ],
+    "toshow": true,
+    "highlight": true
+  },
+  {
     "title": "Crypto bot network powered by ChatGPT uncovered on X",
     "url": "https://mashable.com/article/twitter-x-crypto-botnet-chatgpt-research",
     "outlet": "Mashable",
