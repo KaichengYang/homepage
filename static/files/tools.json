@@ -118,7 +118,7 @@
     "msg": "A collection of color maps for scientific visualization",
     "links": [
       {
-        "url": "https://github.com/yangkcatiu/scicolor",
+        "url": "https://github.com/yang3kc/scicolor",
         "name": "GitHub"
       },
       {
@@ -126,7 +126,7 @@
         "name": "PyPI"
       },
       {
-        "url": "https://yangkcatiu.github.io/scicolor/",
+        "url": "https://yang3kc.github.io/scicolor/",
         "name": "Scicolor Color Picker"
       }
     ]
