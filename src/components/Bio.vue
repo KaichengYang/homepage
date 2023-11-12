@@ -29,6 +29,9 @@
           <a href="https://twitter.com/yang3kc" class="contact_icon" target="_blank">
             <i class="fab fa-twitter-square"></i>
           </a>
+          <a href="https://yang3kc.substack.com" class="contact_icon" target="_blank">
+            <i class="fas fa-bookmark"></i>
+          </a>
         </div>
       </div>
     </div>
