@@ -8,7 +8,8 @@ export default {
         GitHub: "fab fa-github-square",
         Dataset: "fas fa-database",
         PyPI: "fab fa-python",
-        CRAN: "fab fa-r-project"
+        CRAN: "fab fa-r-project",
+        GPT: "fas fa-robot"
       }
     }
   },
