@@ -1,5 +1,34 @@
 [
   {
+    "authors": "Yan, H., & <u>Yang, K. C.</u>",
+    "year": [
+      2023
+    ],
+    "type": [
+      "preprint"
+    ],
+    "topic": [
+      "socialmedia"
+    ],
+    "highlight": [],
+    "title": "The landscape of social bot research: a critical appraisal",
+    "id": "yan2022landscape",
+    "venue": "Handbook of Critical Studies of Artificial Intelligence.",
+    "links": [
+      {
+        "url": "https://doi.org/10.4337/9781803928562.00073",
+        "name": "DOI"
+      },
+      {
+        "url": "https://doi.org/10.31219/osf.io/3cf4j",
+        "name": "OSF"
+      }
+    ],
+    "altmetric": {
+      "doi_id": "10.31219/osf.io/3cf4j"
+    }
+  },
+  {
     "authors": "DeVerna, M. R., Yan, H. Y., <u>Yang, K. C.</u>, & Menczer, F.",
     "year": [
       2023
@@ -256,31 +285,6 @@
     ],
     "altmetric": {
       "doi_id": "10.31219/osf.io/ap2qf"
-    }
-  },
-  {
-    "authors": "Yan, H., & <u>Yang, K. C.</u>",
-    "year": [
-      2023
-    ],
-    "type": [
-      "preprint"
-    ],
-    "topic": [
-      "socialmedia"
-    ],
-    "highlight": [],
-    "title": "The landscape of social bot research: a critical appraisal",
-    "id": "yan2022landscape",
-    "venue": "Forthcoming in Handbook of Critical Studies of Artificial Intelligence.",
-    "links": [
-      {
-        "url": "https://doi.org/10.31219/osf.io/3cf4j",
-        "name": "DOI"
-      }
-    ],
-    "altmetric": {
-      "doi_id": "10.31219/osf.io/3cf4j"
     }
   },
   {

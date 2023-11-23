@@ -4,6 +4,7 @@ export default {
       pub_icon_map: {
         arXiv: "ai ai-arxiv ai-1x",
         DOI: "far fa-file-pdf",
+        OSF: "far fa-file-pdf",
         SocArXiv: "far fa-file-pdf",
         GitHub: "fab fa-github-square",
         Dataset: "fas fa-database",
