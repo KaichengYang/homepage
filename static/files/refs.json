@@ -106,6 +106,38 @@
     }
   },
   {
+    "authors": "Yan, H., <u>Yang, K. C.</u>, Shanahan, J., & Menczer, F.",
+    "year": [
+      2023
+    ],
+    "type": [
+      "journal"
+    ],
+    "topic": [
+      "socialmedia",
+      "bot"
+    ],
+    "highlight": [
+      "highlight"
+    ],
+    "title": "Exposure to social bots amplifies perceptual biases and regulation propensity",
+    "id": "yan2022exposure",
+    "venue": "Scientific Reports. 13(1), 20707.",
+    "links": [
+      {
+        "url": "https://doi.org/10.1038/s41598-023-46630-x",
+        "name": "DOI"
+      },
+      {
+        "url": "https://doi.org/10.31219/osf.io/ap2qf",
+        "name": "OSF"
+      }
+    ],
+    "altmetric": {
+      "doi_id": "10.1038/s41598-023-46630-x"
+    }
+  },
+  {
     "authors": "<u>Yang, K. C.</u>",
     "year": [
       2023
@@ -257,34 +289,6 @@
     ],
     "altmetric": {
       "arxiv_id": "2301.00151"
-    }
-  },
-  {
-    "authors": "Yan, H., <u>Yang, K. C.</u>, Shanahan, J., & Menczer, F.",
-    "year": [
-      2022
-    ],
-    "type": [
-      "preprint"
-    ],
-    "topic": [
-      "socialmedia",
-      "bot"
-    ],
-    "highlight": [
-      "highlight"
-    ],
-    "title": "Exposure to social bots amplifies perceptual biases and regulation propensity",
-    "id": "yan2022exposure",
-    "venue": "In submission.",
-    "links": [
-      {
-        "url": "https://doi.org/10.31219/osf.io/ap2qf",
-        "name": "DOI"
-      }
-    ],
-    "altmetric": {
-      "doi_id": "10.31219/osf.io/ap2qf"
     }
   },
   {
