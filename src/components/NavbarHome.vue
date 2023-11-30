@@ -10,6 +10,7 @@
         <b-nav-item href="#" v-scroll-to="'#publication'">Publications</b-nav-item>
         <b-nav-item href="#" v-scroll-to="'#tool'">Tools</b-nav-item>
         <b-nav-item href="#" v-scroll-to="'#media'">Media</b-nav-item>
+        <b-nav-item href="https://yang3kc.substack.com" target="_blank">Blog</b-nav-item>
         <b-nav-item href="static/files/cv.pdf">CV</b-nav-item>
         <b-nav-item href="#" v-scroll-to="'#about'">About</b-nav-item>
       </b-navbar-nav>
