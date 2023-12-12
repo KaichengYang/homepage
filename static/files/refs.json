@@ -18,6 +18,10 @@
       {
         "url": "https://arxiv.org/abs/2312.05990",
         "name": "arXiv"
+      },
+      {
+        "url": "https://github.com/ZeningDuan/vMFD",
+        "name": "GitHub"
       }
     ],
     "altmetric": {
