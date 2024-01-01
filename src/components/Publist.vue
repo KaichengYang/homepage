@@ -58,7 +58,7 @@ export default {
       default_paper_meta_order: {
         topic: ["genai", "socialmedia", "bot", "misinformation", "politics", "covid", "opioid", "netsci"],
         type: ["preprint", "journal", "conf", "other"],
-        year: [2023, 2022, 2021, 2020, 2019, 2018, 2017]
+        year: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017]
       }
     }
   },
