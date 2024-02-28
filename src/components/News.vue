@@ -37,6 +37,7 @@ export default {
         "personal_news": {"color": "#006298", "text": "General",},
         "talk": {"color": "#4A3C31", "text": "Talk",},
         "general": {"color": "#006298", "text": "General",},
+        "media": {"color": "#DF3603", "text": "Media",},
       },
     }
   },
