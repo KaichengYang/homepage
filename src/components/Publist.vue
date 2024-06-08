@@ -53,10 +53,11 @@ export default {
         journal: "Journal Articles",
         preprint: "Preprints",
         genai: "Generative AI",
+        nio: "National Internet Observatory",
         other: "Other Works"
       },
       default_paper_meta_order: {
-        topic: ["genai", "socialmedia", "bot", "misinformation", "politics", "covid", "opioid", "netsci"],
+        topic: ["genai", "socialmedia", "bot", "misinformation", "nio", "politics", "covid", "opioid", "netsci"],
         type: ["preprint", "journal", "conf", "other"],
         year: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017]
       }
