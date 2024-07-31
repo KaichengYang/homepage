@@ -16,11 +16,13 @@ import NewsPage from '@/components/NewsPage'
 import ToolPage from '@/components/ToolPage'
 import Failures from '@/components/Failures'
 import MediaPage from '@/components/MediaPage'
+import ResourcePage from '@/components/ResourcePage'
 
 Vue.use(Router)
 Vue.use(BootstrapVue)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -51,6 +53,11 @@ export default new Router({
       path: '/media',
       name: 'MediaPage',
       component: MediaPage
+    },
+    {
+      path: '/resources',
+      name: 'Resources',
+      component: ResourcePage
     },
     {
       path: '*',
