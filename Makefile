@@ -1,12 +1,13 @@
-BUILD := dist/
+BUILD := dist
 TARGET := ../KaichengYang.github.io
 
 build: $(BUILD)
 
 $(BUILD):
 	npm run-script build
+	cp $(BUILD)/index.html $(BUILD)/404.html
 	rsync -a $(BUILD) $(TARGET)
 
 .PHONY: clean
 clean:
-	rm -r $(BUILD)
+	rm -rf $(BUILD)
